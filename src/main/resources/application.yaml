@@ -1,3 +1,4 @@
+# 주석은 똑같다.
 spring:
     application:
       name: madang
@@ -7,7 +8,6 @@ spring:
       username: root
       password: green502
 
-# ??? ???.
 mybatis:
   mapper-locations: mappers/**/*.xml
 
