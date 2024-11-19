@@ -26,7 +26,7 @@ public class CustomerService {
         return mapper.updCustomer(p);
     }
 
-    public int delCustomer(CustomerDelReq p) {
-        return mapper.delCustomer(p);
+    public int delCustomer(int custId) {
+        return mapper.delCustomer(custId);
     }
 }
