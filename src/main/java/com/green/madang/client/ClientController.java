@@ -25,7 +25,7 @@ public class ClientController {
     @Operation(summary = "책 주문")
     public MyResponse<Integer> insOrders(@RequestBody OrderPostReq p) { //Json형태로 넘어오기때문에 RequestBody를 사용한다.
         int result = service.insOrders(p);
-        return new MyResponse<> ("주문이 완료되었습니다.", result);
+        return new MyResponse<>("주문이 완료되었습니다.", result);
     }
 
     //본인이 주문한 책 리스트
@@ -33,9 +33,6 @@ public class ClientController {
     @Operation(summary = "책 주문 리스트")
     public MyResponse<List<OrderGetRes>> selOrderList(@ParameterObject @ModelAttribute OrderGetReq p) {
         List<OrderGetRes> list = service.selOrderList(p);
-        return new MyResponse<>(list.size() + " rows ", list );
+        return new MyResponse<>(list.size() + " rows ", list);
     }
-
-
-
 }

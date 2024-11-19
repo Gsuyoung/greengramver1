@@ -11,5 +11,4 @@ import java.util.List;
 public interface ClientMapper {
     int insOrders(OrderPostReq p);
     List<OrderGetRes> selOrderList(OrderGetReq p);
-
 }

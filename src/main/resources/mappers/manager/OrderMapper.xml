@@ -15,8 +15,4 @@
     ORDER BY A.orderid DESC
         LIMIT #{startIdx}, #{size}
     </select>
-
-
-
-
 </mapper>
